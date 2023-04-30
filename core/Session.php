@@ -28,7 +28,6 @@ class Session{
     public function CallFlashMessage($key){
         $message = $_SESSION[$key];
         unset($_SESSION[$key]);
-        header("refresh:2");
         return $message;
     }
 

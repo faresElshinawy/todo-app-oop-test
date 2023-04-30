@@ -26,7 +26,7 @@ Swal.fire({
   icon: 'success',
   title: '<?= $session->CallFlashMessage("success") ?>',
   showConfirmButton: false,
-  timer: 1500
+  timer: 2000
 })   
 
 <?php endif; ?>
@@ -36,7 +36,7 @@ Swal.fire({
   title: 'error!',
   text: '  <?= $session->CallFlashMessage("errors") ?> ',
   icon: 'error',
-  confirmButtonText: 'ok',
+  showConfirmButton: false,
   timer: 2000
       })            
 <?php endif; ?>
