@@ -22,7 +22,7 @@ class Database{
     // database insert function
     public function Insert($sql){
         if(mysqli_query($this->conn,$sql)){
-            return "your insert is done successfully";
+            return "added successfully";
         }else{
             return false;
         }
